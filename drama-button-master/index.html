@@ -17,12 +17,16 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color:#121212;">
     <audio id="audio" src="sounds/click.mp3" autostart="false" ></audio>
+	<center>
+	 <img src="taquiza.png" alt="Descripción de la imagen"> height=”250” width=250”
+</center>
+	<br/>
     <h1><span class="center-align" style="font-family:lucida sans unicode,lucida grande,sans-serif;"><strong>Taquiza Express</strong></span></h1>
     <br/>
 	
-    <a onclick="drama();" class="center-align waves-effect waves-light btn-large">Menu buffet</a>
+    <a onclick="drama();" class="center-align waves-effect waves-light btn-large">Menú buffet</a>
     <script>
     function drama() {
           var sound = document.getElementById("audio");
@@ -30,7 +34,8 @@
           sound.play();
       }
     </script>
-	<a onclick="drama2();" class="center-align waves-effect waves-light btn-large">Menu llevar</a>
+	<br/>
+	<a onclick="drama2();" class="center-align waves-effect waves-light btn-large">Menú llevar</a>
     <script>
 	    
     function drama2() {
@@ -39,8 +44,8 @@
           sound.play();
       }
     </script>
-	
-	<a onclick="drama3();" class="center-align waves-effect waves-light btn-large">Menu Bebidas</a>
+	<br/>
+	<a onclick="drama3();" class="center-align waves-effect waves-light btn-large">Menú Bebidas</a>
     <script>
     function drama3() {
           var sound = document.getElementById("audio");
