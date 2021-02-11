@@ -22,10 +22,11 @@
     <h1><span class="center-align" style="font-family:lucida sans unicode,lucida grande,sans-serif;"><strong>The Drama Button!</strong></span></h1>
     <br/>
 	
-    <a onclick="drama();" class="center-align waves-effect waves-light btn-large">Play</a><a href="index.html"</a>
+    <a onclick="drama();" class="center-align waves-effect waves-light btn-large">Play</a>
     <script>
     function drama() {
           var sound = document.getElementById("audio");
+	       document.location.href = "inicio.html";
           sound.play();
       }
     </script>
