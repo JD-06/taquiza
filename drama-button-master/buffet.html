@@ -1,17 +1,30 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css"></link>
-    </head>
+<head>
+       
+    
+<script>
+function cargarImagen(){
+ahora=new Date();
+hora=ahora.getHours();
 
-    <body>
-        <div class="container">
-            <img src="img\buffet.jpg" alt="Nature" class="bkImg">
-          
-        </div>
-        
-    </body>
+if(hora>=7 && hora<=16){
+imagen="img/llevarmanana.jpg";
+}
+if(hora>=16 && hora<=23){
+imagen="img/llevarnoche.jpg";
+}
+
+document.images["reloj"].src=imagen;
+}
+</script>
+	<title>Untitled</title>
+</head>
+
+<body onload="cargarImagen()">
+
+<img src="primera.jpg" name="reloj">
 
 
+</body>
+	
 </html> 
