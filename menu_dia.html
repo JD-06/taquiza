@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function cargarImagen(){
+ahora=new Date();
+hora=ahora.getHours();
+if(hora<8){
+imagen="primera.jpg";
+}
+
+if(hora>7 && hora<12){
+imagen="segunda.jpg";
+}
+if(hora>11 && hora<18){
+imagen="tercera.jpg";
+}
+if(hora>17 && hora<24){
+imagen="cuarta.jpg";
+}
+document.images["reloj"].src=imagen;
+}
+</script>
+	<title>Untitled</title>
+</head>
+
+<body onload="cargarImagen()">
+<img src="primera.jpg" name="reloj">
+
+
+</body>
+</html> 
