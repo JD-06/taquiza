@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Taquiza Express</title>
+	<title>Taquiza Express uwu</title>
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <style>
         * {
@@ -19,14 +19,32 @@
 </head>
 <body>
     <audio id="audio" src="sounds/click.mp3" autostart="false" ></audio>
-    <h1><span class="center-align" style="font-family:lucida sans unicode,lucida grande,sans-serif;"><strong>Taquiza Express Menu</strong></span></h1>
+    <h1><span class="center-align" style="font-family:lucida sans unicode,lucida grande,sans-serif;"><strong>Taquiza Express Menu de UWU's</strong></span></h1>
     <br/>
 	
-    <a onclick="drama();" class="center-align waves-effect waves-light btn-large">Play</a>
+    <a onclick="drama();" class="center-align waves-effect waves-light btn-large">Menu comida</a>
     <script>
     function drama() {
           var sound = document.getElementById("audio");
-	       document.location.href = "inicio.html";
+	       document.location.href = "menu.html";
+          sound.play();
+      }
+    </script>
+	<a onclick="drama2();" class="center-align waves-effect waves-light btn-large">Menu buffet</a>
+    <script>
+	    
+    function drama2() {
+          var sound = document.getElementById("audio");
+	       document.location.href = "buffet.html";
+          sound.play();
+      }
+    </script>
+	
+	<a onclick="drama3();" class="center-align waves-effect waves-light btn-large">Menu Bebidas</a>
+    <script>
+    function drama3() {
+          var sound = document.getElementById("audio");
+	       document.location.href = "bebidas.html";
           sound.play();
       }
     </script>
