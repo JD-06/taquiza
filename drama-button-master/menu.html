@@ -8,9 +8,10 @@ hora=ahora.getHours();
 
 if(hora>=7 && hora<=16){
 imagen="img/buffetmanana.jpg";
-}
-if(hora>=16 && hora<=23){
+}else if(hora>=16 && hora<=23){
 imagen="img/buffetnoche.jpg";
+}else{
+	imagen="img/cerrado.jpg";
 }
 
 document.images["reloj"].src=imagen;
@@ -20,9 +21,6 @@ document.images["reloj"].src=imagen;
 </head>
 
 <body onload="cargarImagen()">
-
-<img src="img/cerrado.jpg" name="reloj">
-
 
 </body>
 	
