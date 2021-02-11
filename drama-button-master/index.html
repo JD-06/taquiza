@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Drama Button</title>
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <style>
+        * {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 100px;
+        }
+        a {
+            width: 65%;
+            height: 125px !important;
+            line-height: 110px !important;
+            font-size: 100px !important;
+        }
+    </style>
+</head>
+<body>
+    <br/>
+    <br/>
+    <br/>
+    <audio id="audio" src="sounds/drama.mp3" autostart="false" ></audio>
+    <h1><span class="center-align" style="font-family:lucida sans unicode,lucida grande,sans-serif;"><strong>The Drama Button!</strong></span></h1>
+    <br/>
+    <h5><span class="center-align" style="font-family:lucida sans unicode,lucida grande,sans-serif;">For all of life's<br/><br/>unnecessary drama</span></h5><br/>
+    <a onclick="drama();" class="center-align waves-effect waves-light btn-large">Play</a>
+    <script>
+    function drama() {
+          var sound = document.getElementById("audio");
+          sound.play();
+      }
+    </script>
+</body>
+</html>
